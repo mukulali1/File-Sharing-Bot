@@ -24,14 +24,14 @@ ascii_art = """
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            name="Bot",
-            api_hash=API_HASH,
-            api_id=APP_ID,
+            name="Bot"XYZ_ANIME_TV_BOT,
+            api_hash=95187ed775c3890e46a703dd9d77c66d,
+            api_id=28177885,
             plugins={
                 "root": "plugins"
             },
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN
+            bot_token=8195243165:AAFxB0Q_ks7cpc9kdNMpoFI96q20_26ke5g
         )
         self.LOGGER = LOGGER
 
@@ -40,7 +40,7 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.uptime = datetime.now()
 
-        if FORCE_SUB_CHANNEL:
+        if FORCE_SUB_CHANNEL:6
             try:
                 link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 if not link:
@@ -60,7 +60,7 @@ class Bot(Client):
             await test.delete()
         except Exception as e:
             self.LOGGER(__name__).warning(e)
-            self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
+            self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {-1002589462875}")
             self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
             sys.exit()
 
